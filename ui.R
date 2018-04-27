@@ -60,17 +60,20 @@ dashboardPage(
           
           withTags({
   h1(
-   "Welcome to Disability Rights UK's", em("United Nations Convention on the Rights of Persons with Disabilities"), "Health Check Tool"
+   "Welcome to Disability Rights UK's", 
+   em("United Nations Convention on the Rights of Persons with Disabilities"),
+   "Health Check Tool"
   )
           }),
   
-    fluidRow(#h3("RAG Rating of UNCRPD Status"),
+    fluidRow(h3("All data and comments are currently placeholder text and 
+                may or may not represent the views of Disability Rights UK."),
     box(
       title="RAG Rating Totals", status = "primary", plotOutput("status_plot")
       ),
     
    box(  #Highlight areas of greatest concern
-     h3("Areas of Greatest Concern"),
+     h3("Areas of Greatest Concern:"),
       tableOutput("concern_table"))
   ),
   
